@@ -27,6 +27,24 @@
      border: none;
  }
  
+ .navbar-default .navbar-brand {
+     color: #FFF;
+ }
+ 
+ .navbar-default .navbar-brand:hover {
+     color: #FFF;
+     opacity: 0.75;
+ }
+ 
+ .navbar-default .navbar-nav > li > a {
+     color: #FFF;
+ }
+ 
+ .navbar-default .navbar-nav > li > a:hover {
+     color: #FFF;
+     opacity: 0.75;
+ }
+ 
  .home-callout {
      margin-top: -20px;
      padding-top: 50px;
@@ -37,4 +55,5 @@
  h1, h2, h3 {
      font-family: 'Open Sans', sans-serif;
  }
+ 
  
