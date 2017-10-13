@@ -1,3 +1,9 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+    
+    #root is pointing to homepage
+    #Go to the pages controller and execute the home action
+    root to: 'pages#home'
+    
+    get 'about', to: 'pages#about'
+    
 end
