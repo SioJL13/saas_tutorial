@@ -20,7 +20,7 @@
             <span class="icon-bar"></span>
           </button>
           <!--<a href="/" class="navbar-brand"><i class="fa fa-gamepad"></i> Dev Match</a>-->
-          <%= link_to "/", class:"navbar-brand" do %>
+          <%= link_to root_path, class:"navbar-brand" do %>
             <i class="fa fa-gamepad"></i>
             Dev Match
           <% end %>
@@ -28,7 +28,7 @@
         <div class="collapse navbar-collapse" id="main-nav-collapse">
           <ul class="nav navbar-nav navbar-right">
             <!--Links using Rails style-->
-            <li><%= link_to "About", "/about" %></li>
+            <li><%= link_to "About", about_path %></li>
             <!--<li><a href="/about">About</a></li>-->
           </ul>
         </div><!-- /.navbar-collapse -->
