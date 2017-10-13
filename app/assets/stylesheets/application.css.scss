@@ -27,22 +27,14 @@
      border: none;
  }
  
- .navbar-default .navbar-brand {
-     color: #FFF;
- }
- 
- .navbar-default .navbar-brand:hover {
-     color: #FFF;
-     opacity: 0.75;
- }
- 
+ //saas refactor, using nested selectors
+ .navbar-default .navbar-brand, 
  .navbar-default .navbar-nav > li > a {
      color: #FFF;
- }
- 
- .navbar-default .navbar-nav > li > a:hover {
-     color: #FFF;
-     opacity: 0.75;
+     &:hover{
+      color: #FFF;
+      opacity: 0.75;
+     }
  }
  
  .home-callout {
