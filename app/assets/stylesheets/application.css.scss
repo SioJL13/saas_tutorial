@@ -16,7 +16,9 @@
  
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
- 
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
+
  .navbar, .home-callout { 
     background: #00c6ff;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
