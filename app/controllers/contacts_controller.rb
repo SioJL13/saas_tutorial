@@ -10,13 +10,16 @@ class ContactsController < ApplicationController
     def create
         @contact =  Contact.new(contact_params)
         if @contact.save
-            redirect_to new_contact_path, notice: 'Contact saved'
+            flash[:success] = "Contact saved"
+            redirect_to new_contact_path
         else
-            redirect_to new_contact_path, notice: 'Error'
+            #the errors came in an array
+            flash[:error] = @contact.errors.full_messages.join(", ")
+            redirect_to new_contact_path
         end
     end
     
-    #Security feature
+    #Security feature, mass assignment
     private
         def contact_params
             params.require(:contact).permit(:name,:email,:comments)
