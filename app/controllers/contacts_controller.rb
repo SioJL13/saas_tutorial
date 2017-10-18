@@ -3,8 +3,10 @@ class ContactsController < ApplicationController
     def new
         #instance variable
         @contact = Contact.new
+        #Equivalente a {name:, email:, comments:}
     end
     
+    #default name to save in rails
     def create
         @contact =  Contact.new(contact_params)
         if @contact.save
