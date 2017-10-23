@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
     
-  devise_for :users
+    devise_for :users
+    
     #root is pointing to homepage
     #Go to the pages controller and execute the home action
     root to: 'pages#home'
